@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
 html,
 body{
     background-color: #fff;
@@ -157,7 +163,6 @@ input[type=submit]:active {
 }
 
 .short-para {
-    padding: 30px auto;
     line-height: 145%;
     word-spacing: 10px;
 }
@@ -172,9 +177,10 @@ h3{
 /* -------------------------------------------- */
 
 .try-a-demo {
-    float: none;
-    margin-top:200px;
-    background-color: #ef4852;
+    margin-top:20px;
+    background-color: #e9e6e6;
+    margin-bottom:20px;
+    padding: 0px;
 }
 
 h2{
@@ -184,19 +190,57 @@ h2{
 }
 
 .windenergybasics {
-    background-color: #ac4a4a;
     text-align:justify;
     padding: 30px auto;
     margin-top:40px;
-    margin-left:300px;
-    margin-right:300px;
+    margin-left:100px;
+    margin-right:100px;
 }
 
-.js--wp-1 {
+
+.img-1 {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.img-1 img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.img-1 img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.clearfix {zoom:1;}
+.clearfix :after{
+    display: block;
+    visibility: hidden;
+    content: '.';
+    clear: both;
+
+}
+
+
+
+
+
+/* .js--wp-1 {
     opacity: 0;
     animation-duration: 1s;
 }
 
 .js--wp-1.animated{
     opacity: 0;
-}
+} */
